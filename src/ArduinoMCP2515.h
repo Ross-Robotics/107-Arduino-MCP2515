@@ -26,17 +26,17 @@
 #include <string>
 #include <functional>
 
-#if defined __has_include
-#  if __has_include (<libcanard/canard.h>)
-#    include <libcanard/canard.h>
-#    define LIBCANARD 1
-#  elif __has_include (<canard.h>)
-#    include <canard.h>
-#    define LIBCANARD 1
-#  endif
-#else
-#  define LIBCANARD 0
-#endif
+// #if defined __has_include
+// #  if __has_include (<libcanard/canard.h>)
+// #    include <libcanard/canard.h>
+// #    define LIBCANARD 1
+// #  elif __has_include (<canard.h>)
+// #    include <canard.h>
+// #    define LIBCANARD 1
+// #  endif
+// #else
+// #  define LIBCANARD 0
+// #endif
 
 /**************************************************************************************
  * TYPEDEF

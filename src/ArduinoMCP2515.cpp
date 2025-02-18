@@ -240,12 +240,12 @@ bool ArduinoMCP2515::transmitCANFrame(uint32_t const id, uint8_t const * data, u
     return true;
   }
 
-#if LIBCANARD
+// #if LIBCANARD
   /* Only use a single transmit buffer in order to prevent unintentional
    * priority inversion while transmitting OpenCyphal/CAN frames.
    */
   return false;
-#endif
+// #endif
 
   if (isBitClr(_io.readRegister(Register::TXB1CTRL), bp(TXBnCTRL::TXREQ)))
   {
